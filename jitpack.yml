@@ -1,0 +1,4 @@
+# JitPack builds this repository on request (https://jitpack.io), with Java 21.
+before_install:
+  - sdk install java 21.0.2-open
+  - sdk use java 21.0.2-open
