@@ -1,7 +1,0 @@
-# JitPack builds this repository on request (https://jitpack.io), with Java 21 and Maven from SDKMAN.
-before_install:
-  - sdk install java 21.0.2-open
-  - sdk use java 21.0.2-open
-  - sdk install maven 3.9.9
-install:
-  - echo "MAVEN_HOME=$MAVEN_HOME M2_HOME=$M2_HOME"; unset MAVEN_HOME M2_HOME; $HOME/.sdkman/candidates/maven/3.9.9/bin/mvn -B install -DskipTests
