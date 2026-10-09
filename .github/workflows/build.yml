@@ -1,4 +1,4 @@
-# Builds and tests jr-runtime (plain Java 21, no dependencies) on a clean machine.
+# Builds and tests jr-runtime (plain Java 21, no dependencies) on Windows and macOS, the platforms jr ships for.
 
 name: build
 
@@ -10,7 +10,10 @@ on:
 
 jobs:
   build:
-    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        os: [windows-latest, macos-latest]
+    runs-on: ${{ matrix.os }}
     steps:
       - uses: actions/checkout@v4
 

@@ -96,7 +96,8 @@ class UpdateCheckTest {
 
     @Test void jrAppReadsTheProperties() {
         try {
-            System.setProperty("io.github.jarrunner.jr.exe", "C:\\tools\\demo.exe");
+            // a native path, as jr passes it (a Windows path on Windows, a POSIX one on macOS)
+            System.setProperty("io.github.jarrunner.jr.exe", java.nio.file.Path.of("tools", "demo.exe").toAbsolutePath().toString());
             System.setProperty("io.github.jarrunner.jr.app.version", "1.2");
             System.setProperty("io.github.jarrunner.jr.app.args.0", "two words");
             System.setProperty("io.github.jarrunner.jr.app.args.1", "x");
