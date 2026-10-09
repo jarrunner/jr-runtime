@@ -1,6 +1,6 @@
 # jr-runtime
 
-Optional library for a Java app launched by a [jr](../jr) exe. `io.github.jarrunner:jr-runtime`, Java 21, no dependencies.
+Optional library for a Java app launched by a [jr](https://github.com/jarrunner/jr) exe. `io.github.jarrunner:jr-runtime`, Java 21, no dependencies.
 
 jr passes the app everything about itself as system properties: every leaf of the exe's embedded jrc-json as `io.github.jarrunner.jr.<path>` (`app.id`, `app.version`, `update.url`, `jvm.vmArgs.0`, ...), plus `exe` (the launcher's path), `startMicros` and `beforeJvmMicros`. Those properties are the API; this library only gives them names and types, and adds an update check. An app can use the properties directly and never depend on this.
 

@@ -7,6 +7,20 @@
   <version>1.0-SNAPSHOT</version>
 
   <description>Optional library for apps launched by jr: typed access to the -Dio.github.jarrunner.jr.* properties jr passes (the app's own jrc-json, its exe path) and an update check that tells the app whether a newer release exists, using the same rules as jr -Xjr:update-check. No dependencies. The app decides if, when and how to tell its user.</description>
+  <url>https://github.com/jarrunner/jr-runtime</url>
+
+  <licenses>
+    <license>
+      <name>Apache License, Version 2.0</name>
+      <url>https://www.apache.org/licenses/LICENSE-2.0.txt</url>
+    </license>
+  </licenses>
+
+  <scm>
+    <connection>scm:git:git://github.com/jarrunner/jr-runtime.git</connection>
+    <developerConnection>scm:git:ssh://github.com:jarrunner/jr-runtime.git</developerConnection>
+    <url>https://github.com/jarrunner/jr-runtime</url>
+  </scm>
 
   <properties>
     <maven.compiler.release>21</maven.compiler.release>
