@@ -1,3 +1,7 @@
+# jr-runtime (merged into jr-apputils)
+
+This library was merged into [jr-apputils](https://github.com/jarrunner/jr-apputils) on 2026-10-11: `JrApp` is there under the package `jarrunner.jr.apputils`, and its update check became `Updater.checkAtMostEvery`, `inBackground` and `notice`, which ask jr itself so the update rules live in one place. This repository is archived. It was never released on Maven Central.
+
 # jr-runtime
 
 Optional library for a Java app launched by a [jr](https://github.com/jarrunner/jr) exe. `io.github.jarrunner:jr-runtime`, Java 21, no dependencies.
